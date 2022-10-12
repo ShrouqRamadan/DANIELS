@@ -1,0 +1,453 @@
+/* global */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+
+}
+h2::after{
+
+    content: "";
+    width: 20%;
+    height: 25px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70px;
+    left:40%;
+    z-index: -1;
+
+}
+/* navbar */
+.nav-link
+{
+color: black;
+position: relative;
+}
+ .nav-link:hover
+{
+color: black;
+
+}
+ .nav-link.active::before
+{
+    content: "";
+    background-color: black;
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+
+}
+/* header */
+.header{
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height:100vh ;
+}
+.header .overlay{
+    background-color: rgba(0, 0, 0, 0.593);
+    height: 100%;
+}
+.header-caption h1{
+    font-size:50px ;
+    line-height:55px;
+    font-weight:800;
+}
+.header-caption h5{
+
+         line-height:83.2px;
+         font-size:55px;
+
+
+}
+.header-caption h5::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes typing {
+    1%{content: " |";}
+    2%{content: " D|";}
+    3%{content: " De|";}
+    4%{content: " Dev|";}
+    5%{content: " Deve|";}
+    6%{content: " Devel|";}
+    7%{content: " Develo|";}
+    8%{content: " Develop|";}
+    9%{content: " Develope|";}
+    10%{content: " Developer|";}
+    11%{content: " Developer|";}
+    12%{content: " Developer|";}
+    13%{content: " Develope|";}
+    14%{content: " Develop|";}
+    14%{content: " Develo|";}
+    16%{content: " Devel|";}
+    17%{content: " Deve|";}
+    18%{content: " Dev|";}
+    19%{content: " De|";}
+    20%{content: " D|";}
+    21%{content: " |";}
+    22%{content: " D|";}
+    23%{content: " De|";}
+    25%{content: " Des|";}
+    26%{content: " Desi|";}
+    27%{content: " Desig|";}
+    28%{content: " Design|";}
+    30%{content: " Designe|";}
+    32%{content: " Designer|";}
+    33%{content: " Designe|";}
+    35%{content: " Design|";}
+    37%{content: " Desig|";}
+    39%{content: " Desi|";}
+    40%{content: " Des|";}
+    43%{content: " De|";}
+    45%{content: " D|";}
+    50%{content: " |";}
+    52%{content: " L|";}
+    54%{content: " La|";}
+    58%{content: " Larr|";}
+    60%{content: " Larry|";}
+    65%{content: " Larry D|";}
+    69%{content: " Larry Da|";}
+    70%{content: " Larry Dan|";}
+    72%{content: " Larry Dani|";}
+    75%{content: " Larry Danie|";}
+    79%{content: " Larry Daniel|";}
+    80%{content: " Larry Daniels|";}
+    83%{content: " Larry Daniel|";}
+    86%{content: " Larry Danie|";}
+    89%{content: " Larry Dani|";}
+    90%{content: " Larry Dan|";}
+    91%{content: " Larry Da|";}
+    92%{content: " Larry D|";}
+    93%{content: " Larry|";}
+    94%{content: " Larr|";}
+    95%{content: " Lar|";}
+    96%{content: " La|";}
+    98%{content: " L|";}
+    100%{content: " |";}
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.756);
+}
+/* about */
+.dotted{
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    height:100%;
+
+}
+.dotted img{
+   position: relative;
+   left: 20px;
+   bottom: 20px;
+
+}
+.about-contant h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item-one{
+    width: 100%;
+    height: 25px;
+    box-shadow: 2px 2px 5px 2px gray inset;
+    overflow: hidden;
+}
+
+.item-one .item-inner{
+
+    content: "";
+    animation-name: bg;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    background-color: black;
+    width: 95%;
+    height: 100%;
+
+}
+@keyframes bg {
+    0%{width: 20%;}
+    20%{width: 30%;}
+    40%{width: 40%;}
+    60%{width: 60%;}
+    80%{width: 80%;}
+    100%{width: 95%;}
+}
+
+.item-one .item-inner-1{
+
+    content: "";
+    animation-name: bg-1;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+}
+@keyframes bg-1 {
+    0%{width: 30%;}
+    20%{width: 40%;}
+    40%{width: 50%;}
+    60%{width: 60%;}
+    80%{width: 70%;}
+    100%{width: 80%;}
+}
+.item-one .item-inner-2{
+    content: "";
+    animation-name: bg-2;
+    animation-duration:0.5s;
+    animation-direction: alternate;
+    width: 90%;
+    height: 100%;
+    background-color: black;
+}
+@keyframes bg-2 {
+    0%{width: 30%;}
+    20%{width: 40%;}
+    40%{width: 50%;}
+    60%{width: 60%;}
+    80%{width: 80%;}
+    100%{width: 90%;}
+}
+
+.btn-dark:hover{
+    background-color: white;
+    color: black;
+}
+
+/* service */
+.ser-icon{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(128, 128, 128, 0.089);
+    font-size: 27px;
+
+}
+.service-item:hover .ser-icon{
+
+    background-color:rgba(0, 0, 0, 0.818);
+    color: white;
+
+}
+.service h3{
+    font-size: 40px;
+}
+/* portfolio */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color:black;
+    background-color: transparent;
+}
+.portfolio-item{
+    position: relative;
+overflow: hidden;
+
+}
+.portfolio-item:hover .portfolio-caption{
+    top: 0;
+    opacity: 1;
+}
+.portfolio-caption{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.903);
+    border: 8px solid rgba(128, 128, 128, 0.178);
+   position: absolute;
+    left: 0;
+    top: 20px;
+    opacity: 0;
+    transition:  top 0.5s ,opacity 1s;
+}
+
+.portfolio-icon{
+    width: 30px;
+    height: 30px;
+    background-color:black;
+   color: white;
+
+}
+.portfolio-icon:hover{
+   border: 1px black solid;
+   background-color: white;
+   color: black;
+}
+.col-md-12 button{
+    position: relative;
+    left: 80px;
+    top: 10px;
+}
+/* Testimonials */
+
+.text-car.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+border-radius: 50%;
+background-color: gray;
+}
+
+.num-item i{
+    font-size: 30px;
+
+}
+.num-item h4{
+    font-size: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+.num1::after {
+    content: "850";
+    animation-name: number;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+}
+
+@keyframes number {
+    0% {content: "100";}
+    10% {content: "200";}
+    20% {content: "300";}
+    30% {content: "400";}
+    40% {content: "500";}
+    50% {content: "600";}
+    70% {content: "700";}
+    80% {content: "800";}
+    100% {content: "850";}
+}
+.num2::after {
+    content: "230";
+    animation-name: number1;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+}
+
+@keyframes number1 {
+    0% {content: "20";}
+    10% {content: "30";}
+    20% {content: "50";}
+    30% {content: "150";}
+    40% {content: "175";}
+    50% {content: "200";}
+    70% {content: "210";}
+    80% {content: "220";}
+    100% {content: "230";}
+}
+.num3::after {
+    content: "9450";
+    animation-name: number2;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+}
+
+@keyframes number2 {
+    0% {content: "1000";}
+    10% {content: "2000";}
+    20% {content: "3000";}
+    30% {content: "4500";}
+    40% {content: "5000";}
+    50% {content: "6000";}
+    70% {content: "8000";}
+    80% {content: "9000";}
+    100% {content: "9450";}
+}
+.num4::after {
+    content: "780";
+    animation-name: number3;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+}
+
+@keyframes number3 {
+    0% {content: "100";}
+    10% {content: "200";}
+    20% {content: "300";}
+    30% {content: "400";}
+    40% {content: "500";}
+    50% {content: "600";}
+    70% {content: "700";}
+    80% {content: "750";}
+    100% {content: "780";}
+}
+/* our Blog */
+.item-img img:hover{
+transform: scale(1.2,1.2);
+}
+.item-img img{
+transition: transform 1s;
+}
+.item-img {
+overflow: hidden;
+}
+.item h5{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+.item span{
+    position: relative;
+}
+.item span::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* contact */
+.contact-icon{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.067);
+    font-size: 25px;
+
+}
+.contact-icon:hover{
+
+    background-color:black;
+    color: white;
+
+}
+.content-input input{
+    background-color: rgba(128, 128, 128, 0.067);
+    border: 0;
+}
+.content-input input::placeholder{
+padding-left: 10px;
+}
+.content-input input:focus{
+border: 0;
+outline: 0;
+}
+.content-input textarea{
+    background-color: rgba(128, 128, 128, 0.067);
+    border: 0;
+}
+.content-input textarea::placeholder{
+padding-left: 10px;
+}
+.content-input textarea:focus{
+border: 0;
+outline: 0;
+}
+footer{
+    background-color: black;
+}
+
